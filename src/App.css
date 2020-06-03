@@ -1,38 +1,86 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(230, 177, 227);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.myHeader {
+  width: 50%;
+  text-align: center;
+  text-shadow: 2px 2px, 5px, red;
+  margin-top: 10px;
+  margin-left: 300px;
+  padding: 5px;
+  background-color: red;
+  border-style: solid;
+  border-width: 3px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: rgb(54, 54, 112);
+  animation-name: color-change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes color-change {
+  0% {
+    background-color: red;
+  }
+  22% {
+    background-color: yellow;
+  }
+  44% {
+    background-color: rgb(64, 64, 165);
+  }
+  66% {
+    background-color: rgb(36, 172, 36);
+  }
+  88% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animation {
+  position: center;
+  height: 150px;
+  width: 150px;
+  margin: 0, auto;
+  animation: rotation 2s infinite linear;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes rotation {
+  33% {
+    transform: rotate(45deg);
+  }
+  66% {
+    transform: rotate(-45deg);
+  }
+  100% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.display {
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px, 5px, red;
+  height: 30vh;
+  width: 30vh;
+  border-style: solid;
+  border-width: 3px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: rgb(54, 54, 112);
+  margin-top: 20px;
+  margin-left: 550px;
 }
