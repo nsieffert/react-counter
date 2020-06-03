@@ -5,17 +5,22 @@ function ButtonPad() {
 
   return (
     <div className="buttons">
-      <p>Your current Count is {count}:</p>
-      <button id="add" onClick={() => setCount(count + 1)}>
+      <span>Your Current Count Is: {count}</span>
+      <button className="btn" onClick={() => setCount(count + 1)}>
         Add One
       </button>
       <button
+        className="btn"
         onClick={() => setCount(count + 1 + Math.round(Math.random() * 3))}
       >
         Mystery
       </button>
-      <button onClick={() => setCount(count - 1)}>Delete One</button>
-      <button onClick={() => setCount(count === 0)}>Reset</button>
+      <button className="btn" onClick={() => setCount(count - 1)}>
+        Delete One
+      </button>
+      <button className="btn" onClick={() => setCount(count === 0)}>
+        Reset
+      </button>
     </div>
   );
 }

@@ -1,22 +1,4 @@
-.App {
-  text-align: center;
-}
 body {
-  background-color: rgb(230, 177, 227);
-}
-.myHeader {
-  width: 50%;
-  text-align: center;
-  text-shadow: 2px 2px, 5px, red;
-  margin-top: 10px;
-  margin-left: 300px;
-  padding: 5px;
-  background-color: red;
-  border-style: solid;
-  border-width: 3px;
-  border-left-width: 10px;
-  border-right-width: 10px;
-  border-color: rgb(54, 54, 112);
   animation-name: color-change;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -41,11 +23,17 @@ body {
     background-color: red;
   }
 }
-
+.myHeader {
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 300px;
+  padding: 5px;
+}
 .animation {
-  position: center;
+  position: relative;
   height: 150px;
-  width: 150px;
+  width: 200px;
   margin: 0, auto;
   animation: rotation 2s infinite linear;
   animation-name: rotation;
@@ -54,18 +42,26 @@ body {
 }
 @keyframes rotation {
   33% {
-    transform: rotate(45deg);
+    transform: rotate(35deg);
   }
   66% {
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
   }
   100% {
     transform: rotate(0deg);
   }
 }
-
 .display {
   text-align: center;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+  height: 13%;
+  text-align: center;
+  background-color: cornflowerblue;
 }
 .buttons {
   display: flex;
@@ -74,13 +70,8 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 2px 2px, 5px, red;
-  height: 30vh;
-  width: 30vh;
-  border-style: solid;
-  border-width: 3px;
-  border-left-width: 10px;
-  border-right-width: 10px;
-  border-color: rgb(54, 54, 112);
-  margin-top: 20px;
-  margin-left: 550px;
+  height: 50vh;
+  width: 40vh;
+  margin-top: -65px;
+  margin-left: 533px;
 }
