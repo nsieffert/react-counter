@@ -1,16 +1,14 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
+import unsure from "./unsure.jpg";
 
 function Display(props) {
-    // const [display,setDisplay] = useState(0);
+  return (
+    <div className="myHeader">
+      <h1>Try the Mystery Counter!</h1>
 
-    return (
-        <section className="display">
-            This is the Display for the Counter.
-        </section>
-    )
-
-
+      <img className="animation" src={unsure} />
+    </div>
+  );
 }
 
 export default Display;
-

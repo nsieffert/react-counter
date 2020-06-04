@@ -1,15 +1,14 @@
-import React from 'react';
-import Display from './Display';
-import ButtonPad from './ButtonPad';
-
+import React from "react";
+import Display from "./Display";
+import ButtonPad from "./ButtonPad";
 
 function Counter() {
-    return (
-        <div className="counter">
-            <Display/>
-            <ButtonPad/>
-        </div>
-    )
+  return (
+    <div className="display">
+      <Display />
+      <ButtonPad />
+    </div>
+  );
 }
 
 export default Counter;
